@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'LINUX_DEMO'
+        label 'master'
     }
     stages {
         stage('Build') {
