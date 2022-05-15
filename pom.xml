@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>training.taylor.time-tracker</groupId>
     <artifactId>time-tracker-parent</artifactId>
@@ -41,7 +40,7 @@
                         <target>${java.version}</target>
                     </configuration>
                 </plugin>
-               <plugin>
+                <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
                     <version>${findbugs.version}</version>
@@ -57,17 +56,17 @@
                     <version>${checkstyle.version}</version>
                 </plugin>
                 <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-            <version>3.7.1</version>
-        </plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.7.1</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
 
     <reporting>
         <plugins>
-        <plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
                 <configuration>
@@ -94,21 +93,21 @@
             </plugin>
 
             <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-project-info-reports-plugin</artifactId>
-            <version>3.0.0</version>
-            <reportSets>
-                <reportSet>
-                    <reports>
-                        <report>index</report>
-                        <report>licenses</report>
-                        <report>dependency-info</report>
-                        <report>summary</report>
-                        <report>plugins</report>
-                    </reports>
-                </reportSet>
-            </reportSets>
-        </plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>index</report>
+                            <report>licenses</report>
+                            <report>dependency-info</report>
+                            <report>summary</report>
+                            <report>plugins</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
         </plugins>
     </reporting>
 </project>
